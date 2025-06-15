@@ -11,7 +11,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-xs font-thin">
-        Portfolio. Made with React, Tailwind CSS, and ❤️
+        © {new Date().getFullYear()} Michael Raharison. Tous droits réservés.
       </div>
     </footer>
   );
