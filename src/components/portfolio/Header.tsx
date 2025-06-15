@@ -11,7 +11,7 @@ const socialLinks = [
   { href: "https://www.linkedin.com/in/michael-raharison-215901288", icon: Linkedin, label: "LinkedIn" },
   { href: "https://www.instagram.com/dm_rhrsn_/", icon: Instagram, label: "Instagram" },
   { href: "https://github.com/DM034", icon: Github, label: "GitHub" },
-  { href: "https://wa.me/261324908409", iconName: "whatsapp", label: "WhatsApp" }, // Use iconName for dynamic
+  { href: "https://wa.me/261324908409", iconName: "whatsapp", label: "WhatsApp" }, // WhatsApp
 ];
 
 export default function Header() {
@@ -27,6 +27,7 @@ export default function Header() {
         {socialLinks.map(({ href, icon: Icon, iconName, label }) => {
           if (iconName === "whatsapp") {
             const WhatsappIcon = icons["whatsapp"];
+            if (!WhatsappIcon) return null;
             return (
               <a
                 key={href}

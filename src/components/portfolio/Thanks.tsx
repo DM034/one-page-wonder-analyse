@@ -30,16 +30,18 @@ export default function Thanks() {
               >
                 <Phone size={17} /> +261 32 49 084 09
               </a>
-              <a
-                href="https://wa.me/261324908409"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="WhatsApp"
-                className="ml-2 text-muted hover:text-green-500 transition"
-                title="WhatsApp"
-              >
-                <WhatsappIcon size={19} />
-              </a>
+              {WhatsappIcon && (
+                <a
+                  href="https://wa.me/261324908409"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="WhatsApp"
+                  className="ml-2 text-muted hover:text-green-500 transition"
+                  title="WhatsApp"
+                >
+                  <WhatsappIcon size={19} />
+                </a>
+              )}
             </li>
             <li>
               <span className="font-semibold">Address :</span>{" "}
@@ -103,16 +105,18 @@ export default function Thanks() {
             >
               <Github size={22} />
             </a>
-            <a
-              href="https://wa.me/261324908409"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="whatsapp"
-              className="hover:text-green-500 transition"
-              title="WhatsApp"
-            >
-              <WhatsappIcon size={22} />
-            </a>
+            {WhatsappIcon && (
+              <a
+                href="https://wa.me/261324908409"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="whatsapp"
+                className="hover:text-green-500 transition"
+                title="WhatsApp"
+              >
+                <WhatsappIcon size={22} />
+              </a>
+            )}
           </div>
           <a
             href="/cv.pdf"
