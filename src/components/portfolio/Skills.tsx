@@ -1,12 +1,10 @@
 
 export default function Skills() {
-  // Could extract these from a data object in the future
   const skillItems = [
     { name: "Java", value: 85 },
     { name: "C++", value: 70 },
     { name: "C#", value: 60 },
     { name: ".NET", value: 60 },
-    { name: "PHP", value: 50 },
     { name: "PostgreSQL", value: 85 },
     { name: "Oracle", value: 85 },
     { name: "MySQL", value: 70 },

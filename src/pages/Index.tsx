@@ -1,5 +1,6 @@
 
 import Header from "@/components/portfolio/Header";
+import FreelanceSection from "@/components/portfolio/FreelanceSection";
 import About from "@/components/portfolio/About";
 import Skills from "@/components/portfolio/Skills";
 import Education from "@/components/portfolio/Education";
@@ -13,6 +14,7 @@ export default function Index() {
   return (
     <div className="w-full min-h-screen bg-dark text-beige" style={{ fontFamily: "'Inter', Arial, sans-serif" }}>
       <Header />
+      <FreelanceSection />
       <About />
       <Skills />
       <Education />

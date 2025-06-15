@@ -1,5 +1,5 @@
 
-import { Facebook, Twitter, Linkedin, Instagram, Github } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Github, Download } from "lucide-react";
 
 export default function Thanks() {
   return (
@@ -7,14 +7,12 @@ export default function Thanks() {
       id="thanks"
       className="slide-section flex flex-col items-center justify-center text-center"
     >
-      <div className="w-full flex justify-between items-center mb-6">
-        <div></div>
+      <div className="w-full flex flex-col items-center gap-2 mb-6">
         <div className="font-oswald text-[2.7rem] uppercase font-bold tracking-tight">
           Thank You
         </div>
         <div className="text-xs text-muted">dm034.github.io</div>
       </div>
-      {/* Contact module inspired by your screenshot */}
       <div className="w-full max-w-5xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
         {/* Contact info */}
         <div className="flex flex-col items-start text-left px-4 md:px-10">
@@ -90,6 +88,14 @@ export default function Thanks() {
               <Github size={22} />
             </a>
           </div>
+          <a
+            href="/cv.pdf"
+            download
+            className="btn-outline flex items-center gap-2 mt-8"
+          >
+            <Download size={20} />
+            Download CV
+          </a>
         </div>
         {/* Simple contact form (HTML only, no JS) */}
         <form
@@ -141,4 +147,3 @@ export default function Thanks() {
     </section>
   );
 }
-
