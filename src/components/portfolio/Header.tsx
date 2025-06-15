@@ -1,0 +1,40 @@
+
+import { Facebook, Twitter, Linkedin, Instagram, Github } from "lucide-react";
+
+const profileImg = "/lovable-uploads/c58de510-be2f-4999-b017-6fa9ffabe1bb.png";
+const logoImg = "/lovable-uploads/04f18d19-7b27-4ed5-b066-e546dbc3f338.png";
+
+const socialLinks = [
+  { href: "https://www.facebook.com/dmrhrsn", icon: Facebook, label: "Facebook" },
+  { href: "https://x.com/dm_michael23", icon: Twitter, label: "Twitter" },
+  { href: "https://www.linkedin.com/in/michael-raharison-215901288", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://www.instagram.com/dm_rhrsn_/", icon: Instagram, label: "Instagram" },
+  { href: "https://github.com/DM034", icon: Github, label: "GitHub" },
+];
+
+export default function Header() {
+  return (
+    <header className="w-full flex items-center justify-between px-4 py-4 md:px-10">
+      <div className="flex items-center gap-3">
+        <img src={logoImg} alt="DM Logo" className="w-14 h-14 rounded-xl bg-white shadow" />
+        <span className="font-oswald text-xl font-bold tracking-tight uppercase">
+          Michael Raharison
+        </span>
+      </div>
+      <div className="flex items-center gap-4">
+        {socialLinks.map(({ href, icon: Icon, label }) => (
+          <a
+            key={href}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={label}
+            className="hover:scale-110 transition-transform text-beige opacity-80 hover:opacity-100"
+          >
+            <Icon size={24} strokeWidth={1.7} />
+          </a>
+        ))}
+      </div>
+    </header>
+  );
+}
