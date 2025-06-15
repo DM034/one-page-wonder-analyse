@@ -1,9 +1,22 @@
+
 import { ArrowRight, Facebook, Twitter, Linkedin, Instagram, Github } from "lucide-react";
 
 const softBeige = "var(--portfolio-accent)";
 
 const logoDM = "/lovable-uploads/04f18d19-7b27-4ed5-b066-e546dbc3f338.png";
 const photoPortrait = "/lovable-uploads/2e76c297-e10b-4279-9ebc-c464ce2203fb.png";
+
+// === Ajout de toutes les images manquantes ===
+const fotoIntro = "/lovable-uploads/2e76c297-e10b-4279-9ebc-c464ce2203fb.png"; // À remplacer si besoin
+const fotoFace = "/lovable-uploads/2e76c297-e10b-4279-9ebc-c464ce2203fb.png";
+const fotoEdu = "/lovable-uploads/5c34d011-7c7a-4874-848f-e618c7d5e561.png";
+const fotoSkills1 = "/lovable-uploads/c0e20d4f-b7c3-42f6-b7db-a4dae33a4b22.png";
+const fotoSkills2 = "/lovable-uploads/9187a298-b425-4db9-8c96-a891cb1213de.png";
+const fotoHero = "/lovable-uploads/b67e9741-2ae1-45cb-9b1d-74322f80e261.png";
+const fotoExp = "/lovable-uploads/719aa570-3b86-4e1e-b430-50add1afdfdd.png";
+const fotoPortfolio = "/lovable-uploads/b06683ee-3c79-4a48-8c6b-588d31c29350.png";
+const fotoFirstProject = "/lovable-uploads/4f95c9f7-d58f-45c6-8a70-745fc1e49a85.png";
+const fotoSecondProject = "/lovable-uploads/5c235a24-1b2d-4bea-bed0-34c124690090.png";
 
 // Social links
 const socialLinks = [
