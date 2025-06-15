@@ -7,11 +7,11 @@ export default function Footer() {
           Michael Raharison
         </div>
         <div>
-          dm034.github.io
+          michaelraharison.dev
         </div>
       </div>
       <div className="text-xs font-thin">
-        © {new Date().getFullYear()} Michael Raharison. Tous droits réservés.
+        © {new Date().getFullYear()} Michael Raharison. All rights reserved.
       </div>
     </footer>
   );

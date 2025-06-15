@@ -1,3 +1,4 @@
+
 import { Facebook, Twitter, Linkedin, Instagram, Github, Download, Phone } from "lucide-react";
 import { icons } from "lucide-react";
 
@@ -12,7 +13,7 @@ export default function Thanks() {
         <div className="font-oswald text-[2.7rem] uppercase font-bold tracking-tight">
           Thank You
         </div>
-        <div className="text-xs text-muted">dm034.github.io</div>
+        <div className="text-xs text-muted">michaelraharison.dev</div>
       </div>
       <div className="w-full max-w-5xl mx-auto mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
         {/* Contact info */}
@@ -23,7 +24,7 @@ export default function Thanks() {
           <div className="h-1 w-12 bg-beige rounded-full mb-6" />
           <ul className="text-left text-base space-y-3 mb-7">
             <li className="flex items-center gap-2">
-              <span className="font-semibold">Phone :</span>
+              <span className="font-semibold">Phone:</span>
               <a
                 href="tel:+261324908409"
                 className="text-muted underline hover:text-beige flex items-center gap-1"
@@ -44,13 +45,13 @@ export default function Thanks() {
               )}
             </li>
             <li>
-              <span className="font-semibold">Address :</span>{" "}
+              <span className="font-semibold">Address:</span>{" "}
               <span className="text-muted">
                 IVC 153 bis Ambodivoanjo Ankaraboato, Antananarivo, Madagascar.
               </span>
             </li>
             <li>
-              <span className="font-semibold">Email :</span>{" "}
+              <span className="font-semibold">Email:</span>{" "}
               <a
                 href="mailto:michaeldm034@gmail.com"
                 className="text-muted underline hover:text-beige"
@@ -186,7 +187,6 @@ export default function Thanks() {
           </div>
         </form>
       </div>
-      <div className="mt-10 text-xs text-muted">Michael Raharison</div>
     </section>
   );
 }

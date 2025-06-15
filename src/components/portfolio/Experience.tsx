@@ -35,7 +35,6 @@ export default function Experience() {
             </ul>
           </div>
         </div>
-        {/* ligne supprimée */}
       </div>
     </section>
   );

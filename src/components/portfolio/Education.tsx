@@ -8,7 +8,7 @@ export default function Education() {
           <div>
             <div className="font-bold text-beige text-[1.09rem] mb-1">
               Dec 2024 - Present<br />
-              <span className="font-normal">Master 1 in Computer Development</span>
+              <span className="font-normal">Master's in Computer Development</span>
             </div>
             <div className="text-muted text-sm mb-4">
               IT University Andoharanofotsy, Madagascar.<br />
@@ -23,7 +23,7 @@ export default function Education() {
           <div>
             <div className="font-bold text-beige text-[1.09rem] mb-1">
               Sep 2021 - Jun 2024<br />
-              <span className="font-normal">Bachelor in Computer Development</span>
+              <span className="font-normal">Bachelor's in Computer Development</span>
             </div>
             <div className="text-muted text-sm mb-4">
               IT University Andoharanofotsy, Madagascar.
@@ -37,7 +37,6 @@ export default function Education() {
             <div className="text-muted text-sm mb-4">IEFPA ACEEM.</div>
           </div>
         </div>
-        {/* ligne supprimée */}
       </div>
     </section>
   );
