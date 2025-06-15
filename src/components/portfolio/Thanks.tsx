@@ -97,50 +97,63 @@ export default function Thanks() {
             Download CV
           </a>
         </div>
-        {/* Simple contact form (HTML only, no JS) */}
+        {/* Custom contact form using Formspree */}
         <form
-          className="bg-dark/70 rounded-xl px-4 md:px-10 py-7 flex flex-col gap-4 shadow border border-[#272421]"
+          action="https://formspree.io/f/xovvgzqj"
+          method="POST"
+          id="contactForm"
+          className="bg-dark/70 rounded-xl px-4 md:px-10 py-7 flex flex-col gap-5 shadow border border-[#272421] w-full"
           autoComplete="off"
         >
-          <div className="text-2xl font-semibold mb-2 text-beige text-left">Send a message</div>
+          <div className="text-2xl font-semibold mb-2 text-beige text-left">
+            Send a message
+          </div>
           <div className="h-1 w-12 bg-beige rounded-full mb-3" />
-          <input
-            required
-            type="text"
-            placeholder="Name *"
-            className="border border-outline rounded px-4 py-2 bg-transparent text-beige placeholder:text-muted text-base focus:outline-none focus:border-beige"
-            name="name"
-          />
-          <input
-            required
-            type="email"
-            placeholder="Email *"
-            className="border border-outline rounded px-4 py-2 bg-transparent text-beige placeholder:text-muted text-base focus:outline-none focus:border-beige"
-            name="email"
-          />
-          <input
-            required
-            type="text"
-            placeholder="Subject *"
-            className="border border-outline rounded px-4 py-2 bg-transparent text-beige placeholder:text-muted text-base focus:outline-none focus:border-beige"
-            name="subject"
-          />
-          <textarea
-            required
-            placeholder="Your message *"
-            rows={4}
-            className="border border-outline rounded px-4 py-2 bg-transparent text-beige placeholder:text-muted text-base focus:outline-none focus:border-beige"
-            name="message"
-          />
-          <button
-            type="submit"
-            className="btn-beige mt-3 w-full"
-            disabled
-            aria-disabled="true"
-            title="For demo only"
-          >
-            Send Message
-          </button>
+          <div className="form-group">
+            <input
+              className="border border-outline rounded px-4 py-2 bg-transparent text-beige placeholder:text-muted text-base focus:outline-none focus:border-beige w-full"
+              type="text"
+              name="name"
+              placeholder="Name *"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <input
+              className="border border-outline rounded px-4 py-2 bg-transparent text-beige placeholder:text-muted text-base focus:outline-none focus:border-beige w-full"
+              type="email"
+              name="email"
+              placeholder="Email *"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <input
+              className="border border-outline rounded px-4 py-2 bg-transparent text-beige placeholder:text-muted text-base focus:outline-none focus:border-beige w-full"
+              type="text"
+              name="subject"
+              placeholder="Subject *"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <textarea
+              className="border border-outline rounded px-4 py-2 bg-transparent text-beige placeholder:text-muted text-base focus:outline-none focus:border-beige w-full"
+              name="message"
+              rows={7}
+              placeholder="Your Message *"
+              required
+            />
+          </div>
+          <div className="form-group">
+            <button
+              type="submit"
+              className="btn-beige w-full"
+              id="submitBtn"
+            >
+              <span className="button-text">Send Message</span>
+            </button>
+          </div>
         </form>
       </div>
       <div className="mt-10 text-xs text-muted">Michael Raharison</div>
