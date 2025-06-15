@@ -43,7 +43,7 @@ export default function Thanks() {
           </ul>
           <div className="flex flex-row items-center gap-4 mt-1 text-muted">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/dmrhrsn"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="facebook"
@@ -52,7 +52,7 @@ export default function Thanks() {
               <Facebook size={22} />
             </a>
             <a
-              href="https://twitter.com"
+              href="https://x.com/dm_michael23"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="twitter"
@@ -61,7 +61,7 @@ export default function Thanks() {
               <Twitter size={22} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/michael-raharison-215901288"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="linkedin"
@@ -70,7 +70,7 @@ export default function Thanks() {
               <Linkedin size={22} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/dm_rhrsn_/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="instagram"
@@ -79,7 +79,7 @@ export default function Thanks() {
               <Instagram size={22} />
             </a>
             <a
-              href="https://github.com/"
+              href="https://github.com/DM034"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="github"
