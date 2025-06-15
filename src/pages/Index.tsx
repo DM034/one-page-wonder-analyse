@@ -1,19 +1,18 @@
-
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Facebook, Twitter, Linkedin, Instagram, Github } from "lucide-react";
 
 const softBeige = "var(--portfolio-accent)";
 
-// Remplacer par des images uploadées si dispo, sinon placeholder externe.
-const fotoHero = "/lovable-uploads/c0e20d4f-b7c3-42f6-b7db-a4dae33a4b22.png";
-const fotoFace = "/lovable-uploads/b67e9741-2ae1-45cb-9b1d-74322f80e261.png";
-const fotoIntro = "/lovable-uploads/5c34d011-7c7a-4874-848f-e618c7d5e561.png";
-const fotoEdu = "/lovable-uploads/5c235a24-1b2d-4bea-bed0-34c124690090.png";
-const fotoSkills1 = "/lovable-uploads/5c34d011-7c7a-4874-848f-e618c7d5e561.png";
-const fotoSkills2 = "/lovable-uploads/c0e20d4f-b7c3-42f6-b7db-a4dae33a4b22.png";
-const fotoExp = "/lovable-uploads/719aa570-3b86-4e1e-b430-50add1afdfdd.png";
-const fotoPortfolio = "/lovable-uploads/9187a298-b425-4db9-8c96-a891cb1213de.png";
-const fotoFirstProject = "/lovable-uploads/4f95c9f7-d58f-45c6-8a70-745fc1e49a85.png";
-const fotoSecondProject = "/lovable-uploads/b06683ee-3c79-4a48-8c6b-588d31c29350.png";
+const logoDM = "/lovable-uploads/04f18d19-7b27-4ed5-b066-e546dbc3f338.png";
+const photoPortrait = "/lovable-uploads/2e76c297-e10b-4279-9ebc-c464ce2203fb.png";
+
+// Social links
+const socialLinks = [
+  { href: "https://www.facebook.com/dmrhrsn", icon: Facebook, label: "Facebook" },
+  { href: "https://x.com/dm_michael23", icon: Twitter, label: "Twitter" },
+  { href: "https://www.linkedin.com/in/michael-raharison-215901288", icon: Linkedin, label: "LinkedIn" },
+  { href: "https://www.instagram.com/dm_rhrsn_/", icon: Instagram, label: "Instagram" },
+  { href: "https://github.com/DM034", icon: Github, label: "GitHub" },
+];
 
 // Section links (noms en anglais pour l'esprit design)
 const tocLinks = [
@@ -32,28 +31,58 @@ const tocLinks = [
 export default function Index() {
   return (
     <div className="w-full min-h-screen bg-dark text-beige" style={{ fontFamily: "'Inter', Arial, sans-serif" }}>
-      {/* Cover Section */}
+      {/* Brand/Logo section */}
+      <div className="w-full flex items-center justify-between px-4 py-4 md:px-10">
+        <div className="flex items-center gap-3">
+          <img src={logoDM} alt="DM Logo" className="w-14 h-14 rounded-xl bg-white shadow" />
+          <span className="font-oswald text-xl font-bold tracking-tight uppercase">
+            Michael Raharison
+          </span>
+        </div>
+        <div className="flex items-center gap-4">
+          {socialLinks.map(({ href, icon: Icon, label }) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={label}
+              className="hover:scale-110 transition-transform text-beige opacity-80 hover:opacity-100"
+            >
+              <Icon size={24} strokeWidth={1.7} />
+            </a>
+          ))}
+        </div>
+      </div>
+
+      {/* Cover Section / Présentation principale */}
       <section className="slide-section flex flex-col items-stretch justify-center relative overflow-hidden" style={{minHeight:420}}>
-        <div className="absolute left-4 top-6 text-sm text-muted">Creative Presentation</div>
+        <div className="absolute left-4 top-6 text-sm text-muted">Portfolio · Developer</div>
+        {/* Arrow right, peut-être à garder ? */}
         <a href="#table-of-contents" className="absolute right-10 top-7 hidden md:inline-flex">
           <ArrowRight size={30} strokeWidth={1.5} />
         </a>
         <div className="w-full flex flex-col md:flex-row items-center justify-center z-10">
-          <div className="relative z-20 flex flex-shrink-0 items-center">
-            <span className="font-oswald text-[5.3vw] md:text-[6vw] lg:text-[6.8vw] uppercase tracking-wide leading-[0.95] font-bold select-none"
-                  style={{
-                    color: softBeige,
-                    textShadow: "1px 2px 0 rgba(0,0,0,0.10)"
-                  }}>
-              PORT
-              <span className="opacity-60 outline outline-2 outline-beige pl-2 pr-1">FOLIO</span>
+          {/* Main title and info */}
+          <div className="relative z-20 flex flex-col items-center md:items-start flex-shrink-0">
+            <span className="font-oswald text-[5vw] md:text-[5.6vw] lg:text-[6vw] uppercase tracking-wide leading-[0.95] font-bold select-none"
+              style={{ color: softBeige, textShadow: "1px 2px 0 rgba(0,0,0,0.10)" }}>
+              Michael
+              <span className="opacity-80 outline outline-2 outline-beige pl-2 pr-1">Raharison</span>
             </span>
+            <span className="block text-lg md:text-xl mt-2 font-semibold tracking-wide text-beige/80" style={{letterSpacing:'0.03em'}}>Développeur full stack passionné</span>
+            <span className="block mt-1 text-muted text-sm">"Chaque idée mérite sa solution numérique !"</span>
           </div>
-          <img src={fotoHero} alt="Portrait presentation" className="slide-img ml-0 md:ml-[-28px] -mt-5 md:-mt-10 w-[340px] h-auto object-cover shadow-xl md:mr-3 z-10" />
+          {/* Main portrait */}
+          <img
+            src={photoPortrait}
+            alt="Michael Raharison portrait"
+            className="slide-img ml-0 md:ml-[-18px] -mt-5 md:-mt-10 w-[345px] max-w-[95vw] h-auto object-cover shadow-xl md:mr-3 z-10 rounded-2xl"
+          />
         </div>
         <footer className="flex justify-between items-center w-full px-2 mt-7 text-xs">
-          <div>Anna Katrina Marchesi</div>
-          <div className="hidden md:block">www.reallygreatsite.com</div>
+          <div>Michael Raharison</div>
+          <div className="hidden md:block">dm034.github.io</div>
         </footer>
       </section>
 
