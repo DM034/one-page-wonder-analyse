@@ -1,5 +1,5 @@
 
-import { Facebook, Twitter, Linkedin, Instagram, Github, Download } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Github, Download, Phone, Whatsapp } from "lucide-react";
 
 export default function Thanks() {
   return (
@@ -21,9 +21,24 @@ export default function Thanks() {
           </div>
           <div className="h-1 w-12 bg-beige rounded-full mb-6" />
           <ul className="text-left text-base space-y-3 mb-7">
-            <li>
-              <span className="font-semibold">Phone :</span>{" "}
-              <span className="text-muted">+261 32 49 084 09</span>
+            <li className="flex items-center gap-2">
+              <span className="font-semibold">Phone :</span>
+              <a
+                href="tel:+261324908409"
+                className="text-muted underline hover:text-beige flex items-center gap-1"
+              >
+                <Phone size={17} /> +261 32 49 084 09
+              </a>
+              <a
+                href="https://wa.me/261324908409"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="ml-2 text-muted hover:text-green-500 transition"
+                title="WhatsApp"
+              >
+                <Whatsapp size={19} />
+              </a>
             </li>
             <li>
               <span className="font-semibold">Address :</span>{" "}
@@ -86,6 +101,16 @@ export default function Thanks() {
               className="hover:text-beige transition"
             >
               <Github size={22} />
+            </a>
+            <a
+              href="https://wa.me/261324908409"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="whatsapp"
+              className="hover:text-green-500 transition"
+              title="WhatsApp"
+            >
+              <Whatsapp size={22} />
             </a>
           </div>
           <a

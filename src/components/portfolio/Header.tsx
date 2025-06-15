@@ -1,5 +1,5 @@
 
-import { Facebook, Twitter, Linkedin, Instagram, Github } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Github, Phone, Whatsapp } from "lucide-react";
 
 const profileImg = "/lovable-uploads/c58de510-be2f-4999-b017-6fa9ffabe1bb.png";
 const logoImg = "/lovable-uploads/c0c0f505-731c-4451-92c3-2c569df92383.png"; // transparent background
@@ -10,6 +10,7 @@ const socialLinks = [
   { href: "https://www.linkedin.com/in/michael-raharison-215901288", icon: Linkedin, label: "LinkedIn" },
   { href: "https://www.instagram.com/dm_rhrsn_/", icon: Instagram, label: "Instagram" },
   { href: "https://github.com/DM034", icon: Github, label: "GitHub" },
+  { href: "https://wa.me/261324908409", icon: Whatsapp, label: "WhatsApp" }, // WhatsApp direct link
 ];
 
 export default function Header() {
