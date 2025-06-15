@@ -14,13 +14,13 @@ export default function Index() {
   return (
     <div className="w-full min-h-screen bg-dark text-beige" style={{ fontFamily: "'Inter', Arial, sans-serif" }}>
       <Header />
-      <FreelanceSection />
       <About />
       <Skills />
       <Education />
       <Experience />
       <Portfolio />
       <BestProject />
+      <FreelanceSection />
       <Thanks />
       <Footer />
     </div>

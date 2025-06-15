@@ -1,6 +1,4 @@
 
-import { Download } from "lucide-react";
-
 export default function FreelanceSection() {
   return (
     <section className="w-full rounded-xl my-8 max-w-6xl mx-auto px-6 py-14 lg:py-20 flex flex-col items-center justify-center bg-dark">

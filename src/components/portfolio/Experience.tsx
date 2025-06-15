@@ -6,13 +6,13 @@ export default function Experience() {
         <div className="font-oswald text-[2.9rem] sm:text-[3.5rem] uppercase font-bold mb-6 tracking-tight">Work Experience</div>
         <div className="flex flex-col gap-7">
           <div>
-            <div className="font-bold text-beige text-[1.09rem] mb-1">Dec 2024 - Present<br /><span className="font-normal">Master 1 Student: Team/Tech Lead</span></div>
+            <div className="font-bold text-beige text-[1.09rem] mb-1">Dec 2024 - Present<br /><span className="font-normal">Client Relationship Agent</span></div>
             <div className="text-muted text-sm mb-2">
-              Working on university-run client projects, mentoring undergraduates, researching distributed applications.<br />
+              Managed clients' requests and inquiries at a local service provider, supporting day-to-day customer satisfaction and data updates.<br />
               <ul className="list-disc list-inside">
-                <li>Leading a team for a real-world application for a local startup</li>
-                <li>Technical talks and campus hackathons facilitation</li>
-                <li>Direct client meetings for requirements gathering & delivery</li>
+                <li>Handled new customer onboarding and follow-ups</li>
+                <li>Responded to phone and email inquiries effectively</li>
+                <li>Continuous improvement of client support processes</li>
               </ul>
             </div>
           </div>
@@ -32,15 +32,6 @@ export default function Experience() {
               <li>Reporting module design</li>
               <li>User interface development</li>
               <li>Deployment on Raspberry Pi 4</li>
-            </ul>
-          </div>
-          <div>
-            <div className="font-bold text-beige text-[1.09rem] mb-1">2022 - 2023<br /><span className="font-normal">Client Relationship Agent</span></div>
-            <div className="text-muted text-sm mb-2">Managed clients' requests and inquiries at a local service provider, supporting day-to-day customer satisfaction and data updates.</div>
-            <ul className="list-disc list-inside text-muted text-sm mb-2">
-              <li>Handled new customer onboarding and follow-ups</li>
-              <li>Responded to phone and email inquiries effectively</li>
-              <li>Continuous improvement of client support processes</li>
             </ul>
           </div>
         </div>

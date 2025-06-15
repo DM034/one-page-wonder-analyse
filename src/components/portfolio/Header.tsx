@@ -2,7 +2,7 @@
 import { Facebook, Twitter, Linkedin, Instagram, Github } from "lucide-react";
 
 const profileImg = "/lovable-uploads/c58de510-be2f-4999-b017-6fa9ffabe1bb.png";
-const logoImg = "/lovable-uploads/04f18d19-7b27-4ed5-b066-e546dbc3f338.png";
+const logoImg = "/lovable-uploads/c0c0f505-731c-4451-92c3-2c569df92383.png"; // transparent background
 
 const socialLinks = [
   { href: "https://www.facebook.com/dmrhrsn", icon: Facebook, label: "Facebook" },

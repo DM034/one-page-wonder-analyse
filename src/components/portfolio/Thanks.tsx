@@ -97,7 +97,7 @@ export default function Thanks() {
             Download CV
           </a>
         </div>
-        {/* Custom contact form using Formspree */}
+        {/* Contact form */}
         <form
           action="https://formspree.io/f/xovvgzqj"
           method="POST"
