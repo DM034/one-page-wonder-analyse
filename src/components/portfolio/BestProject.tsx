@@ -1,6 +1,4 @@
 
-const profileImg = "/lovable-uploads/c58de510-be2f-4999-b017-6fa9ffabe1bb.png";
-
 export default function BestProject() {
   return (
     <section id="best-project" className="slide-section flex flex-col md:flex-row items-center gap-8 justify-between">
@@ -9,7 +7,6 @@ export default function BestProject() {
         <div className="text-xs text-muted">dm034.github.io</div>
       </div>
       <div className="w-full flex flex-col md:flex-row items-center gap-8">
-        <img src={profileImg} alt="Best Project" className="slide-img object-cover max-w-[220px]" />
         <div className="flex-1">
           <div className="text-beige text-xl font-semibold mb-3">Order Tracking System (BICI)</div>
           <div className="text-muted mb-3">
@@ -25,3 +22,4 @@ export default function BestProject() {
     </section>
   );
 }
+
