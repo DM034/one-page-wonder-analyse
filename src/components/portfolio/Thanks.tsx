@@ -1,7 +1,8 @@
-
-import { Facebook, Twitter, Linkedin, Instagram, Github, Download, Phone, Whatsapp } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Instagram, Github, Download, Phone } from "lucide-react";
+import { icons } from "lucide-react";
 
 export default function Thanks() {
+  const WhatsappIcon = icons["whatsapp"];
   return (
     <section
       id="thanks"
@@ -37,7 +38,7 @@ export default function Thanks() {
                 className="ml-2 text-muted hover:text-green-500 transition"
                 title="WhatsApp"
               >
-                <Whatsapp size={19} />
+                <WhatsappIcon size={19} />
               </a>
             </li>
             <li>
@@ -110,7 +111,7 @@ export default function Thanks() {
               className="hover:text-green-500 transition"
               title="WhatsApp"
             >
-              <Whatsapp size={22} />
+              <WhatsappIcon size={22} />
             </a>
           </div>
           <a
