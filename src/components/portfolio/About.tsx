@@ -9,7 +9,7 @@ export default function About() {
         <div className="text-muted mb-7 max-w-xl text-base">
           A passionate full-stack developer based in Madagascar, skilled in modern technologies and always seeking new challenges.
         </div>
-        <div className="text-xs text-muted mt-auto">Michael Raharison</div>
+        {/* ligne supprimée */}
       </div>
       <img src={profileImg} alt="Michael Raharison Portrait" className="slide-img object-cover drop-shadow-md" />
     </section>

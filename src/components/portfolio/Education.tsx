@@ -37,7 +37,7 @@ export default function Education() {
             <div className="text-muted text-sm mb-4">IEFPA ACEEM.</div>
           </div>
         </div>
-        <div className="text-xs text-muted mt-9">Michael Raharison</div>
+        {/* ligne supprimée */}
       </div>
     </section>
   );

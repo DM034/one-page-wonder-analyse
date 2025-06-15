@@ -35,7 +35,7 @@ export default function Experience() {
             </ul>
           </div>
         </div>
-        <div className="text-xs text-muted mt-9">Michael Raharison</div>
+        {/* ligne supprimée */}
       </div>
     </section>
   );

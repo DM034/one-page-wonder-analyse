@@ -4,7 +4,7 @@ export default function BestProject() {
     <section id="best-project" className="slide-section flex flex-col md:flex-row items-center gap-8 justify-between">
       <div className="w-full flex justify-between items-center mb-7">
         <div className="font-oswald text-[2rem] sm:text-[2.7rem] uppercase font-bold tracking-tight">Best Project</div>
-        <div className="text-xs text-muted">dm034.github.io</div>
+        {/* ligne supprimée */}
       </div>
       <div className="w-full flex flex-col md:flex-row items-center gap-8">
         <div className="flex-1">
@@ -15,11 +15,7 @@ export default function BestProject() {
           </div>
         </div>
       </div>
-      <div className="w-full flex justify-between text-xs mt-7">
-        <span>Michael Raharison</span>
-        <span>dm034.github.io</span>
-      </div>
+      {/* ligne supprimée */}
     </section>
   );
 }
-
